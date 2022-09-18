@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactnativeauthflow-staging-233102-authRole",
+      "UnauthRoleArn": "arn:aws:iam::961667253413:role/amplify-reactnativeauthflow-staging-233102-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::961667253413:role/amplify-reactnativeauthflow-staging-233102-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactnativeauthflow-staging-233102-deployment",
+      "UnauthRoleName": "amplify-reactnativeauthflow-staging-233102-unauthRole",
+      "StackName": "amplify-reactnativeauthflow-staging-233102",
+      "StackId": "arn:aws:cloudformation:us-east-1:961667253413:stack/amplify-reactnativeauthflow-staging-233102/caec4750-36e0-11ed-828b-1260e98227b1",
+      "AmplifyAppId": "d3p4oukg2lpeef"
+    },
+    "categories": {
+      "auth": {
+        "ReactNativeAuthFlow": {}
+      }
+    }
+  }
+}
