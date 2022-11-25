@@ -1,6 +1,6 @@
 import { View, Text, Image, StyleSheet, useWindowDimensions, ScrollView, Alert } from 'react-native'
 import React, { useState } from 'react'
-import Logo from "../../../assets/images/logo.png"
+import Logo from "../../../assets/images/socialhop.png"
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import SocialSignInButtons from '../../components/SocialSignInButtons';
@@ -46,11 +46,11 @@ const SignInScreen = () => {
 
         <CustomButton text={loading ? "Loading" : "Sign In"} onPress={onSignInPressed} />
 
-        <CustomButton text="Forgot Passowrd" onPress={onForgotPasswordPressed} />
+        <CustomButton text="Forgot Password" onPress={onForgotPasswordPressed} />
 
         <SocialSignInButtons />
 
-        <CustomButton text="Dont have an account? Create one" onPress={onNoAccount} type="TERTIARY" />
+        <CustomButton text="Dont have an account? Create one" onPress={onNoAccount} fgColor="white" />
 
       </View>
     </ScrollView>
@@ -60,12 +60,15 @@ const SignInScreen = () => {
 const styles = StyleSheet.create({
   root: {
     alignItems: 'center',
-    padding: 20,
+    padding: 10,
+    backgroundColor: "white",
+    height:'100%',
   },
   logo: {
     width: '70%',
     maxWidth: 300,
     height: 100,
+    
   },
 });
 

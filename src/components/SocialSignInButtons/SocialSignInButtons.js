@@ -1,29 +1,27 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import CustomButton from '../CustomButton'
 
 const SocialSignInButtons = () => {
-    const onSignInFacebook = () => {
-        console.warn('facebook')
-        n
-      }
-      const onSignInGoogle = () => {
-        console.warn('google')
-      }
-      const onSignInApple = () => {
-        console.warn('apple')
-      }
+  const onSignInFacebook = () => {
+    console.warn('facebook')
+  }
+  const onSignInGoogle = () => {
+    console.warn('google')
+  }
+  const onSignInApple = () => {
+    console.warn('apple')
+  }
   return (
    <>
- <CustomButton text="Sign In FACEBOOK" onPress={onSignInFacebook} bgColor="E7EAF4" fgColor="#4765A9"/>
+      <CustomButton text="Sign In FACEBOOK" onPress={onSignInFacebook} bgColor="blue" fgColor="white"  />
 
-<CustomButton text="Sign google" onPress={onSignInGoogle}  bgColor="FAE9EA" fgColor="#DD4D44"/>
+      <CustomButton text="Sign In Google" onPress={onSignInGoogle} bgColor="green" fgColor="white"  />
 
-<CustomButton text="Sign apple" onPress={onSignInApple} bgColor="e3e3e3" fgColor="#363636"/>
-
-
-   </>
+      <CustomButton text="Sign In Apple" onPress={onSignInApple} bgColor="black" fgColor="white" />
+    </>
   )
 }
+
+
 
 export default SocialSignInButtons
