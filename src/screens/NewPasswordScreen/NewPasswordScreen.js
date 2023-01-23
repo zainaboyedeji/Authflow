@@ -2,8 +2,6 @@ import { View, Text, Image, StyleSheet, useWindowDimensions, ScrollView, Alert }
 import React, { useState } from 'react';
 import CustomInput from '../../components/CustomInput/index';
 import CustomButton from '../../components/CustomButton/index';
-import Auth from 'aws-amplify';
-
 
 const NewPasswordScreen = () => {
 

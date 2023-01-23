@@ -5,7 +5,6 @@ import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import SocialSignInButtons from '../../components/SocialSignInButtons';
 import { useNavigation } from '@react-navigation/native';
-import Auth from 'aws-amplify';
 
 
 const SignInScreen = () => {

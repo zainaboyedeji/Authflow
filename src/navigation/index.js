@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, ActivityIndicator } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Auth, { Hub } from 'aws-amplify';
 import SignInScreen from '../screens/SignInScreen/SignInScreen';
 import SignUpScreen from '../screens/SignUpScreen/SignUpScreen';
 import ConfirmEmailScreen from '../screens/ConfirmEmailScreen/ConfirmEmailScreen';
@@ -28,15 +27,15 @@ const Navigation = () => {
     checkUser()
   }, []);
 
-  useEffect(() => {
-    const listener = (data) => {
-      if (data.payload.event === 'signIn' || data.payload.event === 'signOut') {
-        checkUser();
-      }
-    };
-    Hub.listen('auth', listener);
-    return () => Hub.remove('auth', listener);
-  }, []);
+  // useEffect(() => {
+  //   const listener = (data) => {
+  //     if (data.payload.event === 'signIn' || data.payload.event === 'signOut') {
+  //       checkUser();
+  //     }
+  //   };
+  //   Hub.listen('auth', listener);
+  //   return () => Hub.remove('auth', listener);
+  // }, []);
 
   if (user === undefined) {
     return (
