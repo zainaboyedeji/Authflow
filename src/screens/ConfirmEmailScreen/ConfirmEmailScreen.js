@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import CustomInput from '../../components/CustomInput/index';
 import CustomButton from '../../components/CustomButton/index';
 import { useNavigation } from '@react-navigation/native';
+import Auth from '@aws-amplify/core';
 
 
 const ConfirmEmailScreen = () => {

@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-socialhopauth-staging-141229-authRole",
+      "UnauthRoleArn": "arn:aws:iam::400694297873:role/amplify-socialhopauth-staging-141229-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::400694297873:role/amplify-socialhopauth-staging-141229-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-socialhopauth-staging-141229-deployment",
+      "UnauthRoleName": "amplify-socialhopauth-staging-141229-unauthRole",
+      "StackName": "amplify-socialhopauth-staging-141229",
+      "StackId": "arn:aws:cloudformation:us-east-1:400694297873:stack/amplify-socialhopauth-staging-141229/bf58b040-c984-11ed-89d2-122444ba955d",
+      "AmplifyAppId": "d2rphl0gjlkgx8"
+    },
+    "categories": {
+      "auth": {
+        "SocialHopAuth": {}
+      }
+    }
+  }
+}

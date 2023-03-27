@@ -5,6 +5,7 @@ import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import SocialSignInButtons from '../../components/SocialSignInButtons';
 import { useNavigation } from '@react-navigation/native';
+import { Auth } from 'aws-amplify';
 
 
 const SignInScreen = () => {
@@ -13,13 +14,14 @@ const SignInScreen = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const navigation = useNavigation();
-  const onSignInPressed = async (data) => {
+  const onSignInPressed = async () => {
+    const response = await Auth.signIn(username, password);
     if (loading) {
       return;
     }
     setLoading(true);
     try {
-      const response = await Auth.signIn(data.username, data.password);
+      const response = await Auth.signIn(username, password);
       console.log(response);
 
     } catch (e) {
@@ -61,13 +63,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 10,
     backgroundColor: "white",
-    height:'100%',
+    height: '100%',
   },
   logo: {
     width: '70%',
     maxWidth: 300,
     height: 100,
-    
+
   },
 });
 
